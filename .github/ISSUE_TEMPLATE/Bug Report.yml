@@ -1,5 +1,5 @@
-name: Bug Report
-description: Bug report
+name: "Bug Report"
+description: "Bug report"
 title: "[Bug]: "
 labels: ["bug"]
 assignees:
