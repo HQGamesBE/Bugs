@@ -24,7 +24,6 @@ body:
     id: steps_to_repoduce
     attributes:
       label: "Steps to reproduce the issue"
-      multiple: false
       value: |
         1. ...
         2. ...
