@@ -1,1 +1,5 @@
 blank_issue_enabled: false
+contact_links:
+  - name: "Help & support on Discord"
+    url: "https://discord.gg/huRSj9gfg7"
+    about: "We don't accept support requests on the issue tracker. Please try asking on Discord instead."
