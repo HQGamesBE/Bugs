@@ -1,51 +1,41 @@
 name: Bug report
 description: Report a bug.
 labels: ["bug"]
+assignees: ["xxAROX"]
 
 body:
-  - type: textarea
-    id: details
+  - type: input
+    id: expected_result
     attributes:
-      label: Details
-      description: Kindly explain in detail your problem.
+      label: "Expected result"
+      description: "What were you expecting to happen?"
+    validations:
+      required: true
+
+  - type: input
+    id: actual_result
+    attributes:
+      label: "Actual result"
+      description: "What actually happened?"
     validations:
       required: true
 
   - type: textarea
-    id: node_version
+    id: steps_to_repoduce
     attributes:
-      label: Node.js version
-      description: The version of Node.js you are using.
-      value: "Not applicable."
-    validations:
-      required: true
-  
-  - type: textarea
-    id: code
-    attributes:
-      label: Example code
-      description: The code/log related to the problem.
-      placeholder: "Not applicable."
-
-  - type: textarea
-    id: os
-    attributes:
-      label: Operating system
-      description: The operating system you are running.
+      label: "Steps to reproduce the issue"
+      multiple: false
+      value: |
+        1. ...
+        2. ...
     validations:
       required: true
 
-  - type: textarea
-    id: scope
+  - type: dropdown
+    id: platform
     attributes:
-      label: Scope
-      description: The scope of the issue. Installation, code, runtime, meta, other?
+      label: Platform
+      description: The operating system you are playing.
+      options: ["Android","IOS","MacOS","Fire TV","Windows 10","PlayStation","Nintendo Switch","XBOX","Windows Phone","Linux"]
     validations:
       required: true
-        
-  - type: textarea
-    id: module
-    attributes:
-      label: Module and version
-      description: The Node.js module that you are experiencing problems with (if applicable).
-      value: "Not applicable."
