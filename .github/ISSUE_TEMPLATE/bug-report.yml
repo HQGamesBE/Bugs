@@ -4,6 +4,15 @@ labels: ["bug"]
 assignees: ["xxAROX"]
 
 body:
+  - type: dropdown
+    id: platform
+    attributes:
+      label: Platform
+      description: The operating system you are playing.
+      options: ["Android","IOS","MacOS","Fire TV","Windows 10","PlayStation","Nintendo Switch","XBOX","Windows Phone","Linux"]
+    validations:
+      required: true
+
   - type: input
     id: expected_result
     attributes:
@@ -27,14 +36,5 @@ body:
       value: |
         1. ...
         2. ...
-    validations:
-      required: true
-
-  - type: dropdown
-    id: platform
-    attributes:
-      label: Platform
-      description: The operating system you are playing.
-      options: ["Android","IOS","MacOS","Fire TV","Windows 10","PlayStation","Nintendo Switch","XBOX","Windows Phone","Linux"]
     validations:
       required: true
